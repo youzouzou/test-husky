@@ -1,0 +1,8 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo "eslint格式校验"
+
+./node_modules/.bin/eslint src/* --fix
+
+git add .
