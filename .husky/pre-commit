@@ -3,7 +3,7 @@
 
 echo "eslint格式校验"
 
-arr=`git diff --stat  --name-only  HEAD` # 查看变更文件
+arr=`git diff --name-only  HEAD` # 查看变更文件
  # 检测src下的修改文件
 for filepath in ${arr[@]}
 do
