@@ -1,1 +1,1 @@
-console.log('adddd');
+console.log('add.js');
