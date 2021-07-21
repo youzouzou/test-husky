@@ -29,11 +29,12 @@
     "src/*": "eslint --fix"
   },
   "dependencies": {
-    "commitizen": "^4.2.4"
+    "commitizen": "^4.2.4",
+    "cz-conventional-changelog-zh": "^0.0.2"
   },
   "config": {
     "commitizen": {
-      "path": "cz-conventional-changelog"
+      "path": "cz-conventional-changelog-zh"
     }
   }
 }
