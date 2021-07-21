@@ -3,15 +3,18 @@
 
 echo "eslint格式校验"
 
-arr=`git diff --name-only  HEAD` # 查看变更文件
- # 检测src下的修改文件
-for filepath in ${arr[@]}
-do
-    if [[ "$filepath" =~ ^[src/] ]]; then :
-        if [ -f "$filepath" ];then
-            echo $filepath
-            ./node_modules/.bin/eslint $filepath --fix
-            git add $filepath
-        fi
-    fi
-done
+# arr=`git diff --name-only  HEAD` # 查看变更文件
+#  # 检测src下的修改文件
+# for filepath in ${arr[@]}
+# do
+#     if [[ "$filepath" =~ ^[src/] ]]; then :
+#         if [ -f "$filepath" ];then
+#             echo $filepath
+#             ./node_modules/.bin/eslint $filepath --fix
+#             git add $filepath
+#         fi
+#     fi
+# done
+
+# lint-staged
+npx lint-staged
